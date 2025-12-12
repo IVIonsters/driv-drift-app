@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./images/Driv.png" alt="Driv Logo" width="200"/>
+</div>
+
 # Driv Drift App
 
 A comprehensive drifting event management and fan engagement platform built with the MERN stack.
