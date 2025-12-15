@@ -1,4 +1,4 @@
-import "../styles/developmentPage.css";
+import "../styles/DevelopmentPage.css";
 
 function DevelopmentPage() {
   return (
