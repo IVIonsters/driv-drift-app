@@ -1,18 +1,33 @@
 <div align="center">
-  <img src="./images/Driv.png" alt="Driv Logo" width="200"/>
+  <img src="./images/Driv.png" alt="Driv Logo" width="400"/>
 </div>
 
-# Driv Drift App
+# Driv
 
-A comprehensive drifting event management and fan engagement platform built with the MERN stack.
+**There are plenty of tools for racing. There are none built for drifting.**  
+**Driv exists to change that.**
 
-## Overview
+---
 
-Driv Drift is the first app tailored specifically to the drifting community, consolidating event data, driver portfolios, live brackets, media, and standings across multiple drift series into one unified platform.
+## What is Driv?
 
-## Vision
+Driv is a comprehensive drifting event management and fan engagement platform built specifically for the drift community. It consolidates driver profiles, live brackets, standings, media, and event information—across multiple drift series—into one centralized experience.
 
-This app aims to replace fragmented tools ,scattered social media, separate streaming platforms with a single destination for fans, drivers, judges, and event organizers.
+Driv is a drifting-first platform designed to unify the fragmented drifting ecosystem into a single, modern destination for fans, drivers, and organizers. Built on the MERN stack with a mobile-first mindset, Driv brings together driver portfolios, live and replayable brackets, event hubs with livestream integration, season standings, and media coverage across multiple series under one banner.
+
+The MVP focuses on delivering the core fan and admin experience—profiles, events, brackets, standings, and media—while laying the groundwork for advanced tooling like judge interfaces, telemetry integration, and a future React Native mobile app.
+
+**Driv is built by someone deeply rooted in drifting, with the goal of preserving the sport's legacy while modernizing how it's experienced.**
+
+---
+
+## The Problem
+
+Drifting data is currently fragmented across social media, standalone bracket tools, streaming platforms, and spreadsheets. Driv's vision is to replace that fragmentation with one authoritative home for drifting—designed with the sport's culture, workflows, and legacy in mind.
+
+**Driv is not just an app; it's an ecosystem.**
+
+---
 
 ## Tech Stack
 
@@ -20,61 +35,113 @@ This app aims to replace fragmented tools ,scattered social media, separate stre
 - **Backend:** Node.js + Express
 - **Database:** MongoDB
 - **Language:** JavaScript
-- **Styling:** Neon-inspired theme
+- **Styling:** Neon-inspired, motorsport-first UI
+- **Architecture:** Modular, API-driven, React Native–ready
 
-## Core Features (MVP - Priority 1)
+---
 
-- **Driver Profiles** — View driver stats, car specs, hometown, win/loss records
-- **Live Brackets** — Custom bracket system supporting 8, 16, and 32-driver formats
-- **Event Pages** — Event info with embedded livestreams (YouTube/Twitch)
-- **Season Standings** — Real-time leaderboards across series
-- **Media Gallery** — Photos and videos from recent events
-- **Admin Dashboard** — CRUD management for drivers, events, brackets, and media
-- **Authentication** — Role-based access (admin/public)
+## Core Goals
 
-## Planned Features (Priority 2)
+- Unify drifting data across series and events
+- Deliver real-time and post-event visibility for fans
+- Provide clean, scalable admin tooling for organizers
+- Preserve driver history, stats, and legacy
+- Prepare for future judge, telemetry, and mobile workflows
 
-- **Spotlight Carousel** — Weekly highlights on homepage
-- **Event Calendar** — Filterable calendar view of all upcoming events
-- **Advanced Bracket Tools** — Seeding, byes, battle notes, export/import
-- **Media Tagging** — Tag content by driver/event/year
-- **Search** — Global search for drivers and events
-- **Push Notifications** — Live alerts when events start or brackets update
-- **Neon Theme System** — Full implementation of electric drift aesthetic
+---
 
-## Future Roadmap (Priority 3)
+## Core Features — MVP (Priority 1)
 
-- **Driver Accounts** — Self-managed profiles with admin approval
-- **Judge Tools** — Private scoring interface with auto-bracket updates
-- **Stats Engine** — Head-to-head records, trends, performance graphs
-- **Telemetry Integration** — Wally telemetry data overlays
-- **Live Battle Center** — Real-time WebSocket updates
-- **React Native App** — Native iOS application
-- **Analytics Dashboard** — Usage tracking and engagement metrics
+These features define the initial public launch and admin tooling.
+
+- **Driver Profiles**
+  - Driver bio, hometown, car details
+  - Basic win/loss and season participation
+- **Event Pages**
+  - Event overview, schedule, location
+  - Embedded livestreams (YouTube / Twitch)
+- **Custom Bracket System**
+  - 8 / 16 / 32 driver formats
+  - Public-facing, live-updating brackets
+- **Season Standings**
+  - Per-series leaderboard tables
+  - Manual admin updates (initial phase)
+- **Media Gallery**
+  - Photos and videos per event
+  - Simple upload and display system
+- **Admin Dashboard**
+  - CRUD management for drivers, events, brackets, standings, and media
+  - Clear separation between admin and public views
+- **Auth & Roles**
+  - Admin vs public access
+  - Foundation for future driver/judge roles
+- **UX Fundamentals**
+  - Loading and error states
+  - Responsive, mobile-friendly layouts
+
+---
+
+## Feature Expansion — Post-MVP (Priority 2)
+
+- Homepage Spotlight / Highlights
+- Global search (drivers, events)
+- Event calendar (list + grid views)
+- Advanced bracket logic (byes, seeding, history)
+- Media tagging (driver, event, season)
+- Browser notifications for live updates
+- Polished neon theme system
+- Mobile-first UX refinement
+
+---
+
+## Long-Term Roadmap — Priority 3
+
+- Driver accounts with self-managed profiles
+- Judge scoring tools with live bracket updates
+- Head-to-head stats engine and performance trends
+- Telemetry integration (Wally and others)
+- Real-time battle center via WebSockets
+- React Native iOS application
+- Analytics and engagement dashboards
+
+---
 
 ## Development Philosophy
 
-This project follows a phased approach:
+Driv is built using a tiered, Jira-style roadmap:
 
-1. **MVP Tier 1** — Core functionality for fans and admins
-2. **Feature Expansion** — Enhanced UX and tooling
-3. **Advanced Features** — Driver/judge portals, telemetry, native mobile
+1. **Tier 1 — MVP**
+   - Core fan experience + admin tooling
+2. **Tier 2 — Expansion**
+   - UX polish, discoverability, and workflow improvements
+3. **Tier 3 — Ecosystem**
+   - Judges, drivers, telemetry, and mobile
 
-Each feature is broken down into Jira-style user stories with clear acceptance criteria to ensure deliverables meet community needs.
+Every feature is broken into clearly defined tasks with acceptance criteria to keep development focused and scalable.
+
+---
 
 ## Target Users
 
-- **Fans** — Follow favorite drivers, watch live events, view standings
-- **Drivers** — Showcase portfolios, track performance
-- **Admins/Organizers** — Manage events, brackets, and content
-- **Judges** — Score runs and manage battle results
+- **Fans**
+  - Follow drivers, watch events, track standings
+- **Drivers**
+  - Build a public portfolio and legacy
+- **Admins / Organizers**
+  - Manage events, brackets, and content
+- **Judges (Future)**
+  - Score runs and manage battle outcomes
 
-## Design Goals
+---
 
-- **Unified Experience** — One app for all drift series
-- **Real-time Updates** — Live brackets and standings
-- **Mobile-First** — Prepared for React Native migration
-- **Community-Driven** — Built by drifters, for drifters
+## Design Principles
+
+- Motorsport-first, not generic sports UI
+- High contrast, neon-inspired visual language
+- Fast, readable, and mobile-friendly
+- Respectful of drifting's culture
+
+---
 
 ## Getting Started
 
