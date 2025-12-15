@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    sans-serif;
+  background: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  position: relative;
+}
+
+.app-container::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 157, 0.03) 0%,
+    transparent 70%
+  );
+  animation: rotate 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  max-width: 900px;
+  width: 100%;
+  z-index: 1;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.logo-text {
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, #00ff9d 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 40px rgba(0, 255, 157, 0.3);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 20px rgba(0, 255, 157, 0.4));
+  }
+  to {
+    filter: drop-shadow(0 0 40px rgba(0, 212, 255, 0.6));
+  }
+}
+
+.tagline {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid rgba(0, 255, 157, 0.2);
+  border-bottom: 1px solid rgba(0, 255, 157, 0.2);
+}
+
+.tagline-main {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 300;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.tagline-emphasis {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 600;
+  background: linear-gradient(135deg, #00ff9d 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+.description {
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+}
+
+.description-text {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.8;
+  color: #b0b0b0;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.description-text.highlight {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  font-weight: 500;
+  color: #00ff9d;
+  text-align: center;
+  margin: 2.5rem 0;
+  letter-spacing: 0.02em;
+}
+
+.coming-soon {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: rgba(0, 255, 157, 0.03);
+  border: 1px solid rgba(0, 255, 157, 0.2);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  backdrop-filter: blur(10px);
+}
+
+.coming-soon-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #00ff9d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.coming-soon-text {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: #d0d0d0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.pulse {
+  width: 12px;
+  height: 12px;
+  background: #00ff9d;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(0, 255, 157, 0.6);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+.status-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #00ff9d;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #808080;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1.5rem;
+  }
+
+  .tagline {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .description {
+    padding: 0 0.5rem;
+  }
+
+  .coming-soon {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
