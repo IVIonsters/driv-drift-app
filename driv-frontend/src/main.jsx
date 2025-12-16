@@ -10,11 +10,13 @@ import "./index.css";
 // Pages
 import DevelopmentPage from "./pages/developmentPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <DevelopmentPage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: "/homepage",
