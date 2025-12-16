@@ -5,10 +5,15 @@ function ErrorPage() {
   return (
     <>
       <div className="flex min-h-svh flex-col items-center justify-center">
-        <Button variant="default">Click me</Button>
-        <Button variant="outline">Outline</Button>
-        <Button size="lg">Large Button</Button>
-        <Link to="/">Back To Home</Link>
+        <p className="p-4">ERROR! 404 PAGE NOT FOUND, SORRY!</p>
+        <Button
+          variant="outline"
+          className="p-8"
+          aria-label="submit"
+          asChild
+        >
+          <Link to="/">Back To Home</Link>
+        </Button>
       </div>
       ,
     </>
