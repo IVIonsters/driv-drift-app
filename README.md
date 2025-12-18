@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./images/Driv.png" alt="Driv Logo" width="400"/>
+  <img src="./driv-frontend/src/assets/driv-logo.png" alt="Driv Logo" width="400"/>
 </div>
 
 # Driv
