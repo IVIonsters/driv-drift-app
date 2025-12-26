@@ -2,6 +2,7 @@ import Navbar from "@/components/NavBar";
 import { ProfileHeader } from "../components/ProfileHeader";
 import DriverStats from "../components/DriverStats";
 import VehiclesList from "../components/VehiclesList";
+import AchievementsList from "../components/AchievementsList";
 
 function DriverProfile() {
   return (
@@ -13,7 +14,7 @@ function DriverProfile() {
           <aside className="col-span-4 space-y-6">
             <DriverStats />
             <VehiclesList />
-            <p>AchievementsList</p>
+            <AchievementsList />
           </aside>
           <main className="col-span-8 space-y-6">
             <p>DriverFeed</p>
