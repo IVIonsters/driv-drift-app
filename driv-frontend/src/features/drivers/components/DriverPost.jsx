@@ -8,7 +8,7 @@ function DriverPost() {
           alt=""
         />
         <div>
-          <p className="text-sm font-medium">Vaughn Sutton</p>
+          <p className="text-sm font-medium">Clayton Thomas</p>
           <p className="text-xs text-muted-foreground">2 hours ago</p>
         </div>
       </div>
