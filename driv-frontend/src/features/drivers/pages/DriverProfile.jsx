@@ -3,6 +3,7 @@ import { ProfileHeader } from "../components/ProfileHeader";
 import DriverStats from "../components/DriverStats";
 import VehiclesList from "../components/VehiclesList";
 import AchievementsList from "../components/AchievementsList";
+import DriverFeed from "../components/DriverFeed";
 
 function DriverProfile() {
   return (
@@ -17,7 +18,7 @@ function DriverProfile() {
             <AchievementsList />
           </aside>
           <main className="col-span-8 space-y-6">
-            <p>DriverFeed</p>
+            <DriverFeed />
           </main>
         </div>
       </div>
