@@ -1,11 +1,12 @@
 import Navbar from "@/components/NavBar";
+import { ProfileHeader } from "../components/ProfileHeader";
 
 function DriverProfile() {
   return (
     <>
       <Navbar />
       <div className="min-h-screen bg-background text-foreground">
-        <p>PlaceHolder</p>
+        <ProfileHeader />
         <p>PlaceHolder</p>
         <div className="mx-auto grid max-w-7xl grid-cols-12 gap-6 px-4 py-6">
           <aside className="col-span-4 space-y-6">
