@@ -8,13 +8,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 // Pages
-import DevelopmentPage from "./pages/developmentPage.jsx";
-import HomePage from "./pages/HomePage.jsx";
-import ErrorPage from "./pages/ErrorPage.jsx";
-import MediaCorner from "./pages/MediaCorner.jsx";
-import EventsPage from "./pages/EventsPage.jsx";
-import DriverProfile from "./pages/DriverProfile.jsx";
-import BracketPage from "./pages/BracketSystem.jsx";
+import DevelopmentPage from "./features/developmentpage/DevelopmentPage.jsx";
+import HomePage from "./features/homepage/pages/HomePage.jsx";
+import ErrorPage from "./features/errorpage/ErrorPage.jsx";
+import MediaCorner from "./features/media/pages/MediaCorner.jsx";
+import EventsPage from "./features/events/pages/EventsPage.jsx";
+import DriverProfile from "./features/drivers/pages/DriverProfile.jsx";
+import BracketPage from "./features/brackets/pages/BracketSystem.jsx";
 
 const router = createBrowserRouter([
   {
