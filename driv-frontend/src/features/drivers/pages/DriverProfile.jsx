@@ -1,6 +1,7 @@
 import Navbar from "@/components/NavBar";
 import { ProfileHeader } from "../components/ProfileHeader";
 import DriverStats from "../components/DriverStats";
+import VehiclesList from "../components/VehiclesList";
 
 function DriverProfile() {
   return (
@@ -8,16 +9,14 @@ function DriverProfile() {
       <Navbar />
       <div className="min-h-screen">
         <ProfileHeader />
-        <p>PlaceHolder</p>
         <div className="mx-auto grid max-w-7xl grid-cols-12 gap-6 px-4 py-6">
           <aside className="col-span-4 space-y-6">
             <DriverStats />
-            <p>PlaceHolder</p>
-            <p>PlaceHolder</p>
+            <VehiclesList />
+            <p>AchievementsList</p>
           </aside>
           <main className="col-span-8 space-y-6">
-            <p>Placeholder</p>
-            <p>Placeholder</p>
+            <p>DriverFeed</p>
           </main>
         </div>
       </div>
