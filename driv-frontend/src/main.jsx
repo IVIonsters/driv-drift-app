@@ -10,6 +10,7 @@ import "./index.css";
 // Pages
 import DevelopmentPage from "./features/developmentpage/DevelopmentPage.jsx";
 import LoginPage from "./features/loginpage/pages/LoginPage";
+import SignUp from "./features/signuppage/pages/SignUpPage";
 import HomePage from "./features/homepage/pages/HomePage.jsx";
 import ErrorPage from "./features/errorpage/ErrorPage.jsx";
 import MediaCorner from "./features/media/pages/MediaCorner.jsx";
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/register",
+    element: <SignUp />,
     errorElement: <ErrorPage />,
   },
   {
