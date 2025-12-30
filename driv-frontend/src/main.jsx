@@ -9,6 +9,7 @@ import "./index.css";
 
 // Pages
 import DevelopmentPage from "./features/developmentpage/DevelopmentPage.jsx";
+import LoginPage from "./features/loginpage/pages/LoginPage";
 import HomePage from "./features/homepage/pages/HomePage.jsx";
 import ErrorPage from "./features/errorpage/ErrorPage.jsx";
 import MediaCorner from "./features/media/pages/MediaCorner.jsx";
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <DevelopmentPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
     errorElement: <ErrorPage />,
   },
   {
