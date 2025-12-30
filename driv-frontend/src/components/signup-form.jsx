@@ -13,6 +13,7 @@ import {
   FieldLabel,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import { Link } from "react-router-dom";
 
 export default function SignupForm({ ...props }) {
   return (
@@ -81,8 +82,16 @@ export default function SignupForm({ ...props }) {
                 >
                   Sign up with Google
                 </Button>
+                <Link to="/">
+                  <Button
+                    variant="outline"
+                    type="button"
+                  >
+                    Return Home
+                  </Button>
+                </Link>
                 <FieldDescription className="px-6 text-center">
-                  Already have an account? <a href="#">Sign in</a>
+                  Already have an account? <a href="/login">Sign in</a>
                 </FieldDescription>
               </Field>
             </FieldGroup>
