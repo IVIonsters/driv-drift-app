@@ -114,12 +114,12 @@ function HomePage() {
       }
       right={
         <RightPreviewPanel>
-          <div className="h-full w-full flex flex-col items-center justify-center gap-4 p-6">
-            <div className="text-8xl">🏁</div>
-            <h3 className="text-white text-xl font-bold text-center">
+          <div className="h-full w-full flex flex-col items-center justify-center gap-3">
+            <div className="text-6xl">🏁</div>
+            <h3 className="text-white text-lg font-bold text-center">
               Start Your Drift Journey
             </h3>
-            <p className="text-white/80 text-sm text-center">
+            <p className="text-white/80 text-sm text-center px-4">
               Join tournaments, connect with drivers, and share your best
               moments
             </p>

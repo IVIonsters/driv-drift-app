@@ -45,31 +45,31 @@ function MediaCorner() {
           {mediaCards.map((card) => (
             <div
               key={card.id}
-              className="group relative overflow-hidden rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+              className="group relative overflow-hidden rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow border border-slate-200"
             >
               {/* Card Image Area */}
               <div
-                className={`relative h-44 bg-gradient-to-br ${card.bgColor} flex items-center justify-center`}
+                className={`relative h-36 bg-gradient-to-br ${card.bgColor} flex items-center justify-center`}
               >
-                <div className="text-6xl transform group-hover:scale-110 transition-transform">
+                <div className="text-5xl transform group-hover:scale-110 transition-transform">
                   {card.icon}
                 </div>
                 {/* Checkmark */}
-                <div className="absolute top-3 left-3">
-                  <div className="h-5 w-5 rounded bg-blue-500 flex items-center justify-center text-white text-xs">
+                <div className="absolute top-2.5 left-2.5">
+                  <div className="h-4 w-4 rounded bg-blue-500 flex items-center justify-center text-white text-xs">
                     ✓
                   </div>
                 </div>
               </div>
 
               {/* Card Content */}
-              <div className="p-4">
-                <div className="flex items-start justify-between mb-3">
+              <div className="p-3.5">
+                <div className="flex items-start justify-between mb-2.5">
                   <div className="flex items-center gap-2">
-                    <div className="h-8 w-8 rounded-full bg-slate-300"></div>
+                    <div className="h-7 w-7 rounded-full bg-slate-300"></div>
                     <div>
-                      <div className="flex items-center gap-1.5">
-                        <span className="text-sm font-semibold text-slate-900">
+                      <div className="flex items-center gap-1">
+                        <span className="text-xs font-semibold text-slate-900">
                           {card.user}
                         </span>
                         <span className="text-blue-500 text-xs">✓</span>
@@ -81,14 +81,14 @@ function MediaCorner() {
                   </div>
                 </div>
 
-                <p className="text-sm text-slate-700 mb-3">{card.title}</p>
+                <p className="text-sm text-slate-700 mb-2.5">{card.title}</p>
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-1.5">
                   {card.tags.map((tag, idx) => (
                     <span
                       key={tag}
-                      className={`rounded px-2 py-1 text-xs font-medium ${card.tagColors[idx]}`}
+                      className={`rounded px-2 py-0.5 text-xs font-medium ${card.tagColors[idx]}`}
                     >
                       {tag}
                     </span>

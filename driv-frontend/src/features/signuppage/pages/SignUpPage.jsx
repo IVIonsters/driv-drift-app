@@ -16,7 +16,7 @@ function SignUp() {
                 Join DRIV 🚗
               </h1>
               <p className="text-slate-600 text-sm">
-                Start your drift racing journey today
+                Start your racing journey today
               </p>
             </div>
             <div className="rounded-2xl bg-white p-6 shadow-lg border border-slate-200">
@@ -27,29 +27,27 @@ function SignUp() {
       }
       right={
         <RightPreviewPanel>
-          <div className="h-full w-full flex flex-col items-center justify-center gap-6 p-8 text-center">
-            <div className="text-8xl">🎯</div>
-            <h3 className="text-white text-2xl font-bold">
-              Join the Community
-            </h3>
-            <p className="text-white/90 text-sm leading-relaxed">
+          <div className="h-full w-full flex flex-col items-center justify-center gap-4 text-center">
+            <div className="text-6xl">🎯</div>
+            <h3 className="text-white text-lg font-bold">Join the Community</h3>
+            <p className="text-white/90 text-sm leading-relaxed px-4">
               Become part of the ultimate drift racing platform
             </p>
-            <div className="grid grid-cols-2 gap-3 w-full mt-4">
-              <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
-                <div className="text-2xl mb-1">500+</div>
+            <div className="grid grid-cols-2 gap-2 w-full mt-2 px-2">
+              <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+                <div className="text-xl mb-0.5">500+</div>
                 <div className="text-xs text-white/70">Active Drivers</div>
               </div>
-              <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
-                <div className="text-2xl mb-1">50+</div>
+              <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+                <div className="text-xl mb-0.5">50+</div>
                 <div className="text-xs text-white/70">Events Monthly</div>
               </div>
-              <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
-                <div className="text-2xl mb-1">1000+</div>
+              <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+                <div className="text-xl mb-0.5">1000+</div>
                 <div className="text-xs text-white/70">Media Posts</div>
               </div>
-              <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
-                <div className="text-2xl mb-1">24/7</div>
+              <div className="bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+                <div className="text-xl mb-0.5">24/7</div>
                 <div className="text-xs text-white/70">Community</div>
               </div>
             </div>

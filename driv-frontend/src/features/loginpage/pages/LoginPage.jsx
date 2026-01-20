@@ -15,9 +15,7 @@ function LoginPage() {
               <h1 className="text-4xl font-bold text-slate-900 mb-2">
                 Welcome Back 🏎️
               </h1>
-              <p className="text-slate-600">
-                Login to continue your drift journey
-              </p>
+              <p className="text-slate-600">Login to continue your journey</p>
             </div>
             <div className="rounded-2xl bg-white p-8 shadow-lg border border-slate-200">
               <LoginForm />
@@ -27,23 +25,23 @@ function LoginPage() {
       }
       right={
         <RightPreviewPanel>
-          <div className="h-full w-full flex flex-col items-center justify-center gap-6 p-8 text-center">
-            <div className="text-8xl">🔐</div>
-            <h3 className="text-white text-2xl font-bold">Secure Access</h3>
-            <p className="text-white/90 text-sm leading-relaxed">
+          <div className="h-full w-full flex flex-col items-center justify-center gap-4 text-center">
+            <div className="text-6xl">🔐</div>
+            <h3 className="text-white text-lg font-bold">Secure Access</h3>
+            <p className="text-white/90 text-sm leading-relaxed px-4">
               Your drift stats, tournament history, and community connections
               are waiting for you
             </p>
-            <div className="space-y-2 text-white/70 text-xs">
-              <div className="flex items-center gap-2">
+            <div className="space-y-1.5 text-white/70 text-xs">
+              <div className="flex items-center gap-2 justify-center">
                 <span className="text-green-300">✓</span>
                 <span>Track your drift scores</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 justify-center">
                 <span className="text-green-300">✓</span>
                 <span>Join tournaments</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 justify-center">
                 <span className="text-green-300">✓</span>
                 <span>Connect with drivers</span>
               </div>

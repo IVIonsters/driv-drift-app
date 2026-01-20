@@ -103,21 +103,21 @@ function EventsPage() {
       }
       right={
         <RightPreviewPanel>
-          <div className="h-full w-full flex flex-col items-center justify-center gap-4 p-6 text-center">
-            <div className="text-7xl mb-2">🏁</div>
-            <h3 className="text-white text-xl font-bold">Upcoming Events</h3>
-            <p className="text-white/80 text-sm">
+          <div className="h-full w-full flex flex-col items-center justify-center gap-3 text-center">
+            <div className="text-5xl">🏁</div>
+            <h3 className="text-white text-lg font-bold">Upcoming Events</h3>
+            <p className="text-white/80 text-sm px-2">
               Don't miss the most exciting drift competitions worldwide
             </p>
-            <div className="mt-6 space-y-3 w-full">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-white text-lg font-bold">Next Event</div>
+            <div className="mt-4 space-y-2 w-full px-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                <div className="text-white text-base font-bold">Next Event</div>
                 <div className="text-white/70 text-sm mt-1">
                   Tokyo Drift Championship
                 </div>
                 <div className="text-white/60 text-xs mt-1">In 6 days</div>
               </div>
-              <button className="w-full bg-white text-teal-600 rounded-lg py-3 font-semibold hover:bg-white/90 transition-colors">
+              <button className="w-full bg-white text-teal-600 rounded-lg py-2.5 text-sm font-semibold hover:bg-white/90 transition-colors">
                 Register Now
               </button>
             </div>

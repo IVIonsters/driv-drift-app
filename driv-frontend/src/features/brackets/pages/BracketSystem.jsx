@@ -110,32 +110,32 @@ function BracketPage() {
       }
       right={
         <RightPreviewPanel>
-          <div className="h-full w-full flex flex-col items-center justify-center gap-6 p-6">
-            <div className="text-7xl">🏁</div>
-            <h3 className="text-white text-xl font-bold text-center">
+          <div className="h-full w-full flex flex-col items-center justify-center gap-4">
+            <div className="text-5xl">🏁</div>
+            <h3 className="text-white text-lg font-bold text-center">
               Tournament Brackets
             </h3>
-            <p className="text-white/80 text-sm text-center">
+            <p className="text-white/80 text-sm text-center px-2">
               Track competitions, view matchups, and follow your favorite
               drivers
             </p>
-            <div className="w-full space-y-3 mt-4">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <div className="w-full space-y-2 mt-2 px-2">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-white text-sm font-semibold">
                     Next Match
                   </span>
                   <span className="text-white/60 text-xs">In 2 hours</span>
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <div className="flex items-center gap-2 text-white text-sm">
-                    <div className="w-6 h-6 rounded-full bg-blue-400"></div>
-                    <span>Driver A</span>
-                    <span className="ml-auto">vs</span>
+                    <div className="w-5 h-5 rounded-full bg-blue-400"></div>
+                    <span className="text-xs">Driver A</span>
+                    <span className="ml-auto text-xs">vs</span>
                   </div>
                   <div className="flex items-center gap-2 text-white text-sm">
-                    <div className="w-6 h-6 rounded-full bg-purple-400"></div>
-                    <span>Driver B</span>
+                    <div className="w-5 h-5 rounded-full bg-purple-400"></div>
+                    <span className="text-xs">Driver B</span>
                   </div>
                 </div>
               </div>

@@ -12,7 +12,7 @@ export function AppLayout({ sidebar, center, right }) {
         <main className="flex-1 overflow-y-auto">{center}</main>
 
         {/* Right Preview Panel */}
-        <aside className="w-[420px] shrink-0">
+        <aside className="w-[360px] shrink-0">
           <div className="sticky top-6 h-[calc(100vh-3rem)]">{right}</div>
         </aside>
       </div>

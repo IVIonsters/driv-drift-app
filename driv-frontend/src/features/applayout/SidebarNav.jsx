@@ -6,12 +6,12 @@ export function SidebarNav() {
   const location = useLocation();
 
   const navItems = [
+    { name: "Development", icon: "🔧", path: "/" },
     { name: "Home", icon: "🏠", path: "/homepage" },
     { name: "Events", icon: "🏁", path: "/events" },
-    { name: "Tournaments", icon: "🏆", path: "/bracket" },
+    { name: "Brackets", icon: "🏆", path: "/bracket" },
     { name: "Driver Profile", icon: "👤", path: "/profile" },
     { name: "Media Corner", icon: "📸", path: "/media" },
-    { name: "Development", icon: "🔧", path: "/" },
   ];
 
   return (
