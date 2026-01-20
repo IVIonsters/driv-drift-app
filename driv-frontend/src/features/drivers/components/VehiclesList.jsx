@@ -3,8 +3,8 @@ import car2 from "@/assets/car2.jpg";
 
 function VehiclesList() {
   return (
-    <div className="rounded-xl border p-4 space-y-4">
-      <h3 className="text-sm font-semibold uppercase tracking-wide">
+    <div className="rounded-2xl bg-white border border-slate-200 p-5 shadow-sm space-y-4">
+      <h3 className="text-sm font-bold uppercase tracking-wide text-slate-900">
         Vehicles
       </h3>
 
@@ -25,17 +25,18 @@ function VehiclesList() {
 
 function Vehicle({ name, spec, image }) {
   return (
-    <div className="flex gap-3 items-center">
+    <div className="flex gap-3 items-center p-3 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors cursor-pointer">
       <img
         src={image}
         alt={name}
-        className="h-12 w-12 rounded object-cover"
+        className="h-14 w-14 rounded-lg object-cover shadow-sm"
       />
 
-      <div>
-        <p className="font-medium">{name}</p>
-        <p className="text-xs text-muted-foreground">{spec}</p>
+      <div className="flex-1">
+        <p className="font-semibold text-slate-900">{name}</p>
+        <p className="text-sm text-slate-600">{spec}</p>
       </div>
+      <span className="text-slate-400">›</span>
     </div>
   );
 }
