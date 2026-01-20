@@ -11,15 +11,15 @@ function SignUp() {
       center={
         <div className="flex items-center justify-center min-h-[calc(100vh-8rem)]">
           <div className="w-full max-w-md">
-            <div className="text-center mb-8">
-              <h1 className="text-4xl font-bold text-slate-900 mb-2">
+            <div className="text-center mb-4">
+              <h1 className="text-3xl font-bold text-slate-900 mb-1">
                 Join DRIV 🚗
               </h1>
-              <p className="text-slate-600">
+              <p className="text-slate-600 text-sm">
                 Start your drift racing journey today
               </p>
             </div>
-            <div className="rounded-2xl bg-white p-8 shadow-lg border border-slate-200">
+            <div className="rounded-2xl bg-white p-6 shadow-lg border border-slate-200">
               <SignUpForm />
             </div>
           </div>

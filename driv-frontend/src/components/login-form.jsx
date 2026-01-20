@@ -21,10 +21,12 @@ export default function LoginForm({ className, ...props }) {
       className={cn("flex flex-col gap-6", className)}
       {...props}
     >
-      <Card>
+      <Card className="border-slate-200">
         <CardHeader>
-          <CardTitle>Login to your account</CardTitle>
-          <CardDescription>
+          <CardTitle className="text-2xl text-slate-900">
+            Login to your account
+          </CardTitle>
+          <CardDescription className="text-slate-600">
             Enter your email below to login to your account
           </CardDescription>
         </CardHeader>
@@ -32,20 +34,31 @@ export default function LoginForm({ className, ...props }) {
           <form>
             <FieldGroup>
               <Field>
-                <FieldLabel htmlFor="email">Email</FieldLabel>
+                <FieldLabel
+                  htmlFor="email"
+                  className="text-slate-900 font-medium"
+                >
+                  Email
+                </FieldLabel>
                 <Input
                   id="email"
                   type="email"
                   placeholder="m@example.com"
                   required
+                  className="border-slate-200 text-slate-900 placeholder:text-slate-400"
                 />
               </Field>
               <Field>
                 <div className="flex items-center">
-                  <FieldLabel htmlFor="password">Password</FieldLabel>
+                  <FieldLabel
+                    htmlFor="password"
+                    className="text-slate-900 font-medium"
+                  >
+                    Password
+                  </FieldLabel>
                   <a
                     href="#"
-                    className="ml-auto inline-block text-sm underline-offset-4 hover:underline"
+                    className="ml-auto inline-block text-sm text-blue-600 underline-offset-4 hover:underline hover:text-blue-700"
                   >
                     Forgot your password?
                   </a>
@@ -55,18 +68,31 @@ export default function LoginForm({ className, ...props }) {
                   type="password"
                   placeholder="********"
                   required
+                  className="border-slate-200 text-slate-900 placeholder:text-slate-400"
                 />
               </Field>
               <Field>
-                <Button type="submit">Login</Button>
+                <Button
+                  type="submit"
+                  className="w-full bg-slate-900 text-white hover:bg-slate-800"
+                >
+                  Login
+                </Button>
                 <Button
                   variant="outline"
                   type="button"
+                  className="w-full border-slate-200 text-slate-700 hover:bg-slate-50"
                 >
                   Login with Google
                 </Button>
-                <FieldDescription className="text-center">
-                  Don&apos;t have an account? <a href="/register">Sign up</a>
+                <FieldDescription className="text-center text-slate-600">
+                  Don&apos;t have an account?{" "}
+                  <a
+                    href="/register"
+                    className="text-blue-600 hover:text-blue-700 font-medium hover:underline"
+                  >
+                    Sign up
+                  </a>
                 </FieldDescription>
               </Field>
             </FieldGroup>

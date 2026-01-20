@@ -17,52 +17,71 @@ import { Link } from "react-router-dom";
 
 export default function SignupForm({ ...props }) {
   return (
-    <Card {...props}>
-      <CardHeader>
-        <CardTitle>Create an account</CardTitle>
-        <CardDescription>
+    <Card
+      {...props}
+      className="border-slate-200"
+    >
+      <CardHeader className="pb-4">
+        <CardTitle className="text-xl text-slate-900">
+          Create an account
+        </CardTitle>
+        <CardDescription className="text-slate-600 text-sm">
           Enter your information below to create your account
         </CardDescription>
       </CardHeader>
       <CardContent>
         <form>
-          <FieldGroup>
+          <FieldGroup className="gap-4">
             <Field>
-              <FieldLabel htmlFor="name">Full Name</FieldLabel>
+              <FieldLabel
+                htmlFor="name"
+                className="text-slate-900 font-medium text-sm"
+              >
+                Full Name
+              </FieldLabel>
               <Input
                 id="name"
                 type="text"
                 placeholder="John Doe"
                 required
+                className="border-slate-200 text-slate-900 placeholder:text-slate-400 h-9"
               />
             </Field>
             <Field>
-              <FieldLabel htmlFor="email">Email</FieldLabel>
+              <FieldLabel
+                htmlFor="email"
+                className="text-slate-900 font-medium text-sm"
+              >
+                Email
+              </FieldLabel>
               <Input
                 id="email"
                 type="email"
                 placeholder="m@example.com"
                 required
+                className="border-slate-200 text-slate-900 placeholder:text-slate-400 h-9"
               />
-              <FieldDescription>
-                We&apos;ll use this to contact you. We will not share your email
-                with anyone else.
-              </FieldDescription>
             </Field>
             <Field>
-              <FieldLabel htmlFor="password">Password</FieldLabel>
+              <FieldLabel
+                htmlFor="password"
+                className="text-slate-900 font-medium text-sm"
+              >
+                Password
+              </FieldLabel>
               <Input
                 id="password"
                 type="password"
                 placeholder="********"
                 required
+                className="border-slate-200 text-slate-900 placeholder:text-slate-400 h-9"
               />
-              <FieldDescription>
-                Must be at least 8 characters long.
-              </FieldDescription>
             </Field>
             <Field>
-              <FieldLabel htmlFor="confirm-password">
+              <FieldLabel
+                htmlFor="confirm-password"
+                className="text-slate-900 font-medium text-sm"
+              >
                 Confirm Password
               </FieldLabel>
               <Input
@@ -70,31 +89,33 @@ export default function SignupForm({ ...props }) {
                 type="password"
                 placeholder="********"
                 required
+                className="border-slate-200 text-slate-900 placeholder:text-slate-400 h-9"
               />
-              <FieldDescription>Please confirm your password.</FieldDescription>
             </Field>
-            <FieldGroup>
-              <Field>
-                <Button type="submit">Create Account</Button>
-                <Button
-                  variant="outline"
-                  type="button"
+            <div className="space-y-2 pt-2">
+              <Button
+                type="submit"
+                className="w-full bg-slate-900 text-white hover:bg-slate-800 h-9"
+              >
+                Create Account
+              </Button>
+              <Button
+                variant="outline"
+                type="button"
+                className="w-full border-slate-200 text-slate-700 hover:bg-slate-50 h-9"
+              >
+                Sign up with Google
+              </Button>
+              <FieldDescription className="text-center text-slate-600 text-xs pt-2">
+                Already have an account?{" "}
+                <a
+                  href="/login"
+                  className="text-blue-600 hover:text-blue-700 font-medium hover:underline"
                 >
-                  Sign up with Google
-                </Button>
-                <Link to="/">
-                  <Button
-                    variant="outline"
-                    type="button"
-                  >
-                    Return Home
-                  </Button>
-                </Link>
-                <FieldDescription className="px-6 text-center">
-                  Already have an account? <a href="/login">Sign in</a>
-                </FieldDescription>
-              </Field>
-            </FieldGroup>
+                  Sign in
+                </a>
+              </FieldDescription>
+            </div>
           </FieldGroup>
         </form>
       </CardContent>
