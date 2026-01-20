@@ -111,7 +111,7 @@ const sharedTransition = {
 
 function HoverGradientNavBar() {
   return (
-    <div className="fixed top-4 left-0 w-full md:bottom-4 md:left-1/2 md:-translate-x-1/2 z-50">
+    <div className="fixed top-1 left-0 w-full md:bottom-4 md:left-1/2 md:-translate-x-1/2 z-50">
       <motion.nav
         className="w-full md:w-fit mx-auto px-2 md:px-4 py-2 md:py-3 rounded-none md:rounded-3xl 
         bg-white/90 dark:bg-black/80 backdrop-blur-lg 
