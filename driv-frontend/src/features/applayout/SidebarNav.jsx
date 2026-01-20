@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator";
 
 export function SidebarNav() {
   const location = useLocation();
-  
+
   const navItems = [
     { name: "Home", icon: "🏠", path: "/homepage" },
     { name: "Events", icon: "🏁", path: "/events" },
@@ -22,7 +22,9 @@ export function SidebarNav() {
           CT
         </div>
         <div className="flex-1">
-          <div className="text-sm font-semibold text-slate-900">Clayton Thomas</div>
+          <div className="text-sm font-semibold text-slate-900">
+            Clayton Thomas
+          </div>
           <div className="text-xs text-slate-500">@ClaySlides</div>
         </div>
         <button className="text-slate-400 hover:text-slate-600">⚙️</button>
